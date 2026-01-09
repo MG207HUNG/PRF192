@@ -6,7 +6,8 @@ int main () {
     x = 4;  // Giai thich: Gan gia tri cho bien x
 
     // In ra man hinh
-    printf("In ra man hinh gia tri ne: %44d \n", x);
+    printf("In ra man hinh gia tri ne: %04d \n", x);
+    // lưu ý : %0"randomnumber"d
     /*Giai thich: in ra man hinh qua ham printf,
      %d la chuoi dinh dang (format string),
     %d o day dai dien cho so nguyen,
