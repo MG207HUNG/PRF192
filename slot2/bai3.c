@@ -5,6 +5,6 @@ int main (){
 	float sum = a + b ;
 	printf ("a = %0.0f \n", a );
 	printf ("b = %0.3f \n", b) ;
-	printf ("5 + 10.216 = %3.2f ", sum ) ;
+	printf ("%.0f + %0.3f = %0.2f ", a,b,sum ) ;
 	return 0;
 }
