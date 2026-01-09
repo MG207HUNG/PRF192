@@ -1,19 +1,16 @@
 #include <stdio.h>
 int main () {
     // khai bao 1 so nguyen
-    int x;
-    // Giai thich: Khai bao kieu gia tri cho bien x, o day la so nguyen (int)
-
+    int x;  // Giai thich: Khai bao kieu gia tri cho bien x, o day la so nguyen (int)
     // khoi tao gia tri bat ky
-    x = 10;
-    // Giai thich: Gan gia tri cho bien x
+    x = 10;  // Giai thich: Gan gia tri cho bien x
 
     // In ra man hinh
     printf("In ra man hinh gia tri ne: %d \n", x);
-    // Giai thich: in ra man hinh qua ham printf,
+    /*Giai thich: in ra man hinh qua ham printf,
     // %d la chuoi dinh dang (format string),
     // %d o day dai dien cho so nguyen,
-    // \n la cu phap xuong dong
+     \n la cu phap xuong dong */
 
     /*
     Giai thich them :
