@@ -15,7 +15,7 @@ int main (){
 	int b = 2 ;
 	printf("a = %d \n", a);
 	printf("b = %d \n", b);
-	printf("%-1s %-5s %-1s %-5s \n ", "a" , "phep toan" , "b" , "Ket qua");
+	printf("%-1s %-5s %-1s %-5s ", "a" , "phep toan" , "b" , "Ket qua");
 	printf("%d + %d = %d \n", a , b , a + b);
 	printf("%d - %d = %d \n", a , b , a - b);
 	printf("%d * %d = %d \n", a , b , a * b);
