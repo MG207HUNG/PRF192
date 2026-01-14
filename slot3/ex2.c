@@ -8,7 +8,7 @@ kich thuoc kieu
 
 */
 int main(){
-	char kt = 'a';
+	char kt = 'C';
 	printf("Gia tri cua bien : %c \n" , kt );
 	printf("Gia tri thap phan : %d \n" , kt );
 	printf("Gia tri hex : %x \n" , kt );
