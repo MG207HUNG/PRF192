@@ -16,9 +16,14 @@ int main (){
 	printf("a = %d \n", a);
 	printf("b = %d \n", b);
 	printf("%-1s %-5s %-1s %-5s ", "a" , "phep toan" , "b" , "Ket qua");
-	printf("%d + %d = %d \n", a , b , a + b);
-	printf("%d - %d = %d \n", a , b , a - b);
-	printf("%d * %d = %d \n", a , b , a * b);
-	printf("%d / %d = %0.2f \n", a , b , (float)a / b);
+	float kq ;
+	kq = a + b ;
+	printf("\n%d + %d = %.0f \n", a , b , kq);
+	kq = a - b ;
+	printf("%d - %d = %.0f \n", a , b , kq );
+	kq = a * b ;
+	printf("%d * %d = %.0f \n", a , b , kq );
+	kq = (float)a / b ;
+	printf("%d / %d = %0.2f \n", a , b , kq);
 	return 0;
 }
