@@ -9,11 +9,7 @@ kich thuoc kieu
 */
 int main(){
 	char kt = 'C';
-	printf("Gia tri cua bien : %c \n" , kt );
-	printf("Gia tri thap phan : %d \n" , kt );
-	printf("Gia tri hex : %x \n" , kt );
-	printf("Gia tri octal : %o \n" , kt );
-	
-	
+	printf("%-16s %-16s %-16s %-16s %-16s %s\n" ,"Ten Bien" , "Gia tri" , "Dec" , "Hex" , "Oct" , "Size");
+	printf("%-16s %-16c %-16d %-16x %-16o %-16d" , "kt" , kt , kt , kt , kt , sizeof(kt));
 	return 0;
 }
