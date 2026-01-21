@@ -10,5 +10,5 @@ int main(){
 		max = b ;
 	if(mac<c)
 		max = c ; 
-	printf("Max la : %0.2f",max);
+	printf("So lon nhat la : %0.2f",max);
 }
