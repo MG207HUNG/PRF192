@@ -4,11 +4,11 @@
 int main(){
 	float a , b , c , max ;
 	printf("nhap a,b,c la :");
-	scanf(" %f %f %f",&a , &b , &c);
+	scanf(" %f,%f,%f",&a , &b , &c);
 	max = a ;
 	if(max<b)
 		max = b ;
-	if(mac<c)
+	if(max<c)
 		max = c ; 
 	printf("So lon nhat la : %0.2f",max);
 }
