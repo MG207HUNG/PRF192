@@ -14,5 +14,5 @@ int main(){
 		}
 			else
 				t = 950*100 + 50*1250 + 50*1350 + (NOK-200)*1550;	
-	printf("So tien dien la: %d Kwh" ,t);
+	printf("So tien dien la: %d dong" ,t);
 }
