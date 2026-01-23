@@ -4,14 +4,14 @@ int main(){
 	int t,check ;
 	printf("So km :");
 	check = scanf("%f",&s);
-	if((check !=1) || s < 0)
+	if((check !=1) || s <= 0)
 	{
 		printf("Nhapsai");
 		return ;
 	}
 	printf("So phut cho:");
 	scanf(" %d",&t);
-	if(s<0.5 && s >=0){
+	if(s<0.5 && s >0){
 		c = 12000;
 	} 
 		else if (s>=0.5 && s<=30){
