@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <math.h>
 int main(){
 	float s , c;
-	int t ;
+	int t,kq ;
 	printf("So km :");
-	if((scanf("%f",&s) !=1) || s < 0)
+	kq = scanf("%f",&s);
+	if((kq !=1) || s < 0)
 	{
 		printf("Nhapsai");
 		return ;
