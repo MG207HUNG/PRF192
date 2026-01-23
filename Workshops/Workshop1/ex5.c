@@ -10,11 +10,14 @@ int main(){
 		return ;
 	}
 	printf("So phut cho:");
-	scanf(" %d",&t);
-	if(s<0.5 && s >0){
+	if(scanf(" %d",&t)!=1 || t < 0){
+		printf("Nhapsai");
+		return ;
+	}
+	if(s<0.5){
 		c = 12000;
 	} 
-		else if (s>=0.5 && s<=30){
+		else if (s<=30){
 		c = 12000 + (s-0.5)*15000;
 	} 	
 			else if(s>30){
