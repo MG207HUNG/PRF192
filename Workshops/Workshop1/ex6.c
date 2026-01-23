@@ -4,39 +4,43 @@ int main (){
 	float cC , gK , cK ,tD ;
 	char chuCai ;
 	printf("Diem chuyen can :");
-	if(scanf(" %f", &cC)!=1){
+	if(scanf(" %f", &cC)!=1 || cC <=0){
 		printf("Nhap sai");
 		return ;
 	}
-	printf("Diem chuyen can :");
-	if(scanf(" %f", &gK)!=1){
+	printf("Diem giua ky :");
+	if(scanf(" %f", &gK)!=1 || gK <=0){
 		printf("Nhap sai");
 		return ;
 	}
-	printf("Diem chuyen can :");
-	if(scanf(" %f", &cC)!=1){
+	printf("Diem cuoi ky :");
+	if(scanf(" %f", &cK)!=1 || cK <=0){
 		printf("Nhap sai");
 		return ;
 	}
 	tD = cC*0.1 + gK*0.3 + cK*0.6 ;
 	if (tD<4){
 		chuCai = 'F';
-		printf("Diem TB la : %c",chuCai);
-	}
-	if (tD>= 4 && tD<=5.4){
+		} 
+	else if (tD>= 4 && tD<=5.4){
 		chuCai = 'D';
-		printf("Diem TB la : %c",chuCai);
+
 	}
-	if (tD>= 5.5 && tD<=6.9){
-		chuCai = 'D';
-		printf("Diem TB la : %c",chuCai);
+	else if (tD>= 5.5 && tD<=6.9){
+		chuCai = 'C';
+
 	}
-	if (tD>= 7 && tD<= 8.4){
-		chuCai = 'D';
-		printf("Diem TB la : %c",chuCai);
+	else if (tD>= 7 && tD<= 8.4){
+		chuCai = 'B';
 	}
-	if (tD>= 8.5 && tD<= 10){
-		chuCai = 'D';
+	else if (tD>= 8.5 && tD<= 10){
+		chuCai = 'A';
+	}
+	if ( cC >=4 && gK >=4 && cK >= 4 && chuCai != 'F' ){
+		printf("Ban da du dieu kieu tot nghiep\n");
+		printf("Diem TB la : %c",chuCai);
+	} else {
+		printf("Ban da truot tot nghiep \n");
 		printf("Diem TB la : %c",chuCai);
 	}
 }
