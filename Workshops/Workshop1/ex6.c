@@ -4,11 +4,20 @@ int main (){
 	float cC , gK , cK ,tD ;
 	char chuCai ;
 	printf("Diem chuyen can :");
-	scanf(" %f",cC);
+	if(scanf(" %f", &cC)!=1){
+		printf("Nhap sai");
+		return ;
+	}
 	printf("Diem chuyen can :");
-	scanf(" %f",gK);	
+	if(scanf(" %f", &gK)!=1){
+		printf("Nhap sai");
+		return ;
+	}
 	printf("Diem chuyen can :");
-	scanf(" %f",cK);
+	if(scanf(" %f", &cC)!=1){
+		printf("Nhap sai");
+		return ;
+	}
 	tD = cC*0.1 + gK*0.3 + cK*0.6 ;
 	if (tD<4){
 		chuCai = 'F';
