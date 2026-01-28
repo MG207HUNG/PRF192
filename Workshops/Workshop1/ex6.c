@@ -1,45 +1,36 @@
 #include <stdio.h>
 int main (){
-	float cC , gK , cK ,tD ;
-	char chuCai ;
-	printf("Diem chuyen can :");
-	if(scanf(" %f", &cC)!=1 || cC <0 || cC > 10){
-		printf("Nhap sai");
-		return ;
+	float chuyenCan , giuaKy , cuoiKy , tongKet ;
+	char diemChu ;
+	printf("Nhap diem chuyen can , giua ky , cuoi ky:");
+	int kq = scanf("%f %f %f",&chuyenCan,&giuaKy,&cuoiKy);
+	printf ("kq nhap la %d",kq);
+	if(kq !=3 || cuoiKy <0 || giuaKy <0 || cuoiKy <0 || chuyenCan >10 || cuoiKy >10 || giuaKy >10) {
+		printf("Nhap sai diem , diem >=0!");
+		return 0;
 	}
-	printf("Diem giua ky :");
-	if(scanf(" %f", &gK)!=1 || gK <0 || gK > 10){
-		printf("Nhap sai");
-		return ;
-	}
-	printf("Diem cuoi ky :");
-	if(scanf(" %f", &cK)!=1 || cK <0 || cK > 10){
-		printf("Nhap sai");
-		return ;
-	}
-	tD = cC*0.1 + gK*0.3 + cK*0.6 ;
-	if (tD<4){
-		chuCai = 'F';
+	tongKet = chuyenCan*0.1 + giuaKy*0.3 + cuoiKy*0.6 ;
+	if (tongKet<4){
+		diemChu = 'F';
 		} 
-	else if (tD<=5.4){
-		chuCai = 'D';
+	else if (tongKet<=5.4){
+		diemChu = 'D';
 
 	}
-	else if (tD<=6.9){
-		chuCai = 'C';
+	else if (tongKet<=6.9){
+		diemChu = 'C';
 
 	}
-	else if (tD<= 8.4){
-		chuCai = 'B';
+	else if (tongKet<= 8.4){
+		diemChu = 'B';
 	}
-	else if (tD<= 10){
-		chuCai = 'A';
+	else if (tongKet<= 10){
+		diemChu = 'A';
 	}
-	if ( cC >=4 && gK >=4 && cK >= 4 && chuCai != 'F' ){
-		printf("Ban da du dieu kieu tot nghiep\n");
-		printf("Diem TB la : %c",chuCai);
+	printf("\nDiem so:%.1f \nDiem chu : %c",tongKet,diemChu);
+	if ( chuyenCan >=4 && giuaKy >=4 && cuoiKy >= 4 && diemChu != 'F' ){
+		printf("\n DU DIEU KIEN TOT NGHIEP");
 	} else {
-		printf("Ban da truot tot nghiep \n");
-		printf("Diem TB la : %c",chuCai);
+		printf("\n Khong DU DIEU KIEN TOT NGHIEP");
 	}
 }
