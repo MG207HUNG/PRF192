@@ -6,7 +6,7 @@ int main (){
 	int kqNhapSo = scanf("%d,%d", &a , &b);
 	fflush(stdin);
 	int kqNhapPhepTinh = scanf(" %c",&phepToan);
-	if(kqNhapSo!=2 || kqNhapPhepTinh!=1 || phepToan!='+'||phepToan!='/'||phepToan!='%'){
+	if(kqNhapSo!=2 || kqNhapPhepTinh!=1 || phepToan!='+'&& phepToan!='/'&& phepToan!='%'){
 		printf("Nhap sai");
 		return 0;
 	}
