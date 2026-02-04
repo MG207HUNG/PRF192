@@ -34,5 +34,4 @@ int main (){
 }	else{
 	printf("%d %c %d = %.0f",a,phepToan,b,kq);
 }
-	
 }

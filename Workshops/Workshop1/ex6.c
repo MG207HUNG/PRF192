@@ -4,7 +4,7 @@ int main (){
 	char diemChu ;
 	printf("Nhap diem chuyen can , giua ky , cuoi ky:");
 	int kq = scanf("%f %f %f",&chuyenCan,&giuaKy,&cuoiKy);
-	printf ("kq nhap la %d",kq);
+	printf ("kq nhap la %d \n",kq);
 	if(kq !=3 || cuoiKy <0 || giuaKy <0 || cuoiKy <0 || chuyenCan >10 || cuoiKy >10 || giuaKy >10) {
 		printf("Nhap sai diem , diem >=0!");
 		return 0;
