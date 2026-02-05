@@ -1,19 +1,20 @@
 #include <stdio.h>
+#include <math.h>
 int main (){
 	float n ;
 	int count =0 ;
 	while(1){
-		if(count==5){
+		if(count == 5){
 	    break;
 	}
 		printf("Nhap vao n:");
 	while ( scanf("%f",&n)!=1 ||n <= 0 || n >1000){
-		printf("Nhap vao n:");
+		printf("\nNhap vao n:");
 		fflush(stdin);
 	}
 	printf("Can bac 2 cua n la : %.2f \n",sqrt(n));
 	count++;
 	}
 
-	printf("/n Da xong , xuat xac");
+	printf("\n Da xong , xuat xac");
 }

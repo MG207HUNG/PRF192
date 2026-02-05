@@ -9,7 +9,7 @@ int main (){
 		n = n/10 ;
 		kq = kq*10 + soDu ;
 	}
-	printf("ketquala: %d", kq );
+	printf("So dao nguoc cua no la : %d", kq );
 	
 	return 0;
 }

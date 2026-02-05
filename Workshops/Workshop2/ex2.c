@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
 	float n ;
-	int count ;
+	int count =0 ;
 	while ( count <5 ){
 		printf("Nhap vao n:");
 	while ( scanf("%f",&n)!=1 ||n <= 0 || n >1000){
