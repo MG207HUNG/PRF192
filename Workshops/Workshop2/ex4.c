@@ -3,7 +3,10 @@ int main (){
 	int n , soDu ;
 	int kq = 0;
 	printf("Nhap n : ");
-	scanf(" %d",&n) ;
+	while(scanf(" %d",&n)!=1 || n <0 ){
+		printf("Nhap n :");
+		while(getchar()!='\n');
+	}
 	while(n>0){
 		soDu = n%10 ;
 		n = n/10 ;

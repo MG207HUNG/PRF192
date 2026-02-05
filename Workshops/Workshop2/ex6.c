@@ -4,8 +4,11 @@ int main() {
     int binary = 0;
     int base = 1;
 
-    printf("Nhap so nguyen thap phan: ");
-    scanf("%d", &n);
+    printf("Nhap so nguyen duong dang thap phan: ");
+    while(scanf("%d", &n)!=1 || n < 0 ){
+    	printf("Vui long nhap dung: ");
+    	while(getchar()!='\n');
+	}
 	if(n==0){
 	printf("So o he nhi phan la: 0");
 		return 0;

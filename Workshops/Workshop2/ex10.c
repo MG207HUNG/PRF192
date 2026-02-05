@@ -12,7 +12,7 @@ int main(){
 			}
 			if(tienRut==0){
 			printf("Thoat\n");
-				break;
+				return 0;
 			}
 			if(tienRut<=soDu){
 			soDu=soDu-tienRut;
@@ -20,7 +20,7 @@ int main(){
 		}
 			else{
 				printf("So du khong du(thoat)");
-				break;
+				return 0;
 		}
 	}
 		if(soDu==0){
