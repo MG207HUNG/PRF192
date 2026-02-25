@@ -7,8 +7,8 @@ int main() {
     int n;
     int min = 1;
     int max = 100;
-    printf("------GameDoanSo-------\n");
     int soNgauNhien = (rand() % (max - min + 1)) + min;
+    printf("------GameDoanSo-------\n");
 	printf("Doan so trong doan tu 1 -> 100 :");
 	while(scanf("%d",&n)!=1 || n>100 || n<1){
 		printf("Vui long nhap so nguyen tu 1 ->100 :");
