@@ -12,6 +12,10 @@ int main() {
   // Fixed Do not edit anything here.
   printf("\nOUTPUT:\n");
   //@STUDENT: WRITE YOUR OUTPUT HERE:
+	if(n<=0){
+		printf("n must be a positive number");
+		return 0;
+	}
   for (int i = 1; i <= n; i++) {
       printf("%-8d", 3 * i);
   }
