@@ -27,7 +27,7 @@ if(a<b){
 	printf("a phai be hon b . Nhap lai\n ");
 	while(getchar()!='\n');
 }
-    printf("Cac so nguyen to trong doan [a,b] la: ");
+    printf("Cac so nguyen to trong doan [ %d , %d] la: ",a,b);
     for(int i = a; i <= b; i++){
         if(i != 2 && i % 2 == 0)
             continue;
