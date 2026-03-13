@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+
+void reverseString(char s[]){
+
+    int len = strlen(s);
+    char temp;
+
+    for(int i = 0; i < len/2; i++){
+
+        temp = s[i];
+        s[i] = s[len-1-i];
+        s[len-1-i] = temp;
+    }
+}
+
+int main(){
+
+    char s[100];
+
+    printf("Nhap chuoi: ");
+    fgets(s,100,stdin);
+
+    s[strcspn(s,"\n")] = '\0';
+
+    reverseString(s);
+
+    printf("Chuoi dao nguoc: %s\n", s);
+
+    return 0;
+}
