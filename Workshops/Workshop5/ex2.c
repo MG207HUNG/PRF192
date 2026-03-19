@@ -18,10 +18,23 @@ int main() {
   printf("\nOUTPUT:\n");
   //@STUDENT: ADD YOUR CODE FOR OUTPUT HERE:
 	
-	for(int i = count - 1; i >= 0 ; i--){
-		printf("%c",a[i]);
+	int len = count ; 
+	if(a[len-1]=='\n'){
+		a[len-1]='\0';
+		len --;
 	}
+	int i = 0;
+	int j = len - 1 ;
 	
+	while(i<j){
+		char temp = a[i];
+		a[i] = a[j];
+		a[j] = temp ;
+		
+		i++ ;
+		j-- ;
+	}
+	printf("%s",a);
 	
 	
 	
